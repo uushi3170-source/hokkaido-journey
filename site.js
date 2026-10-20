@@ -17,8 +17,8 @@
     navLinks.forEach(a => a.classList.toggle("is-active", a.dataset.navLink === id));
     if (!opts.skipScroll) window.scrollTo({ top: 0, behavior: "auto" });
     document.title = (id === "home")
-      ? "北の余白 — Hokkaido Journey"
-      : `${document.querySelector(`[data-nav-link="${id}"]`)?.textContent.trim() || ""} — 北の余白`;
+      ? "北海道旅行"
+      : `${document.querySelector(`[data-nav-link="${id}"]`)?.textContent.trim() || ""} — 北海道旅行`;
     if (navEl) navEl.classList.remove("is-open");
     if (navToggle) navToggle.setAttribute("aria-expanded", "false");
   }
