@@ -97,9 +97,14 @@
 
   /* ---------- scroll-to buttons (e.g. hero lyrics button) ---------- */
   document.querySelectorAll("[data-scroll-to]").forEach(btn => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
       const target = document.getElementById(btn.dataset.scrollTo);
-      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (!target) return;
+      const headerEl = document.querySelector(".site-header");
+      const headerH = headerEl ? headerEl.offsetHeight : 0;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - headerH - 16;
+      window.scrollTo({ top, behavior: "smooth" });
     });
   });
 
