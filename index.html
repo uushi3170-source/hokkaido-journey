@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>北の余白 — Hokkaido Journey</title>
+<meta name="description" content="2026年10月21日〜23日、札幌・富良野・美瑛・北広島・小樽・余市を巡る北海道旅行の記録。旅程、番外編スポット、北海道の歴史雑学、おみやげ、地図をまとめた旅のジャーナル。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <button class="logo" data-goto="home">北 <span class="sub">Kita no Yohaku</span></button>
+  <nav class="nav">
+    <button class="nav-link" data-nav-link="home" data-goto="home">旅のこと</button>
+    <button class="nav-link" data-nav-link="itinerary" data-goto="itinerary">旅程</button>
+    <button class="nav-link" data-nav-link="spots" data-goto="spots">番外編</button>
+    <button class="nav-link" data-nav-link="hokkaido" data-goto="hokkaido">北海道について</button>
+    <button class="nav-link" data-nav-link="souvenir" data-goto="souvenir">おみやげ</button>
+    <button class="nav-link" data-nav-link="map" data-goto="map">マップ</button>
+  </nav>
+  <button class="nav-toggle" aria-label="メニュー" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HOME ===================== -->
+  <section id="home" class="view is-active">
+    <div class="hero">
+      <img src="sapporo-night.webp" alt="札幌の夜景のイメージ">
+      <div class="hero-inner">
+        <div class="hero-dates">2026.10.21 — 10.23 · Sapporo / Furano / Biei / Kitahiroshima / Otaru / Yoichi</div>
+        <h1>北の余白<br>— Hokkaido Journey</h1>
+        <p class="lead">新千歳空港に降り立つ瞬間から、札幌の夜、富良野と美瑛の丘、小樽の運河、余市の海風まで。三日間だけの、短くて濃い北海道の記録。</p>
+        <div class="hero-actions">
+          <button class="btn btn-light" data-goto="itinerary">旅程を見る</button>
+          <button class="play-pill" data-audio-toggle>
+            <span class="ring" data-audio-icon><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5v11l10-5.5z"/></svg></span>
+            <span class="label">
+              <span class="t1">Theme Song</span>
+              <span class="t2" data-audio-label>旅のテーマソング</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro-main">
+      <div>
+        <p class="eyebrow">Journal 01</p>
+        <h2 style="margin-top:14px;font-size:clamp(22px,3vw,30px);">三日間だけの、小さな北海道一周</h2>
+        <p style="margin-top:20px;">今回の旅は、札幌を起点に富良野・美瑛・北広島を抜け、小樽に一泊、最終日に余市へ足を延ばして札幌から帰るという、欲張らない三日間のルートです。</p>
+        <p>観光の合間には、地元の寿司屋や市場、海辺のベーカリーなど、旅程には入れきれなかった「気になる場所」も番外編としてまとめています。</p>
+      </div>
+      <div>
+        <p class="eyebrow">Route</p>
+        <div class="route-line">
+          <span class="stop">新千歳空港</span><span class="sep">→</span>
+          <span class="stop">札幌</span><span class="sep">→</span>
+          <span class="stop">富良野</span><span class="sep">→</span>
+          <span class="stop">美瑛</span><span class="sep">→</span>
+          <span class="stop">北広島</span><span class="sep">→</span>
+          <span class="stop">小樽</span><span class="sep">→</span>
+          <span class="stop">余市</span><span class="sep">→</span>
+          <span class="stop">新千歳空港</span>
+        </div>
+        <p style="margin-top:28px;">このサイトでは、日ごとの旅程のほかに、番外編のスポット、巡るエリアの歴史や雑学、新千歳空港で買えるおみやげ、そして旅の地図をまとめています。</p>
+      </div>
+    </div>
+
+    <section class="block">
+      <div class="wrap">
+        <div class="block-head">
+          <p class="eyebrow">Explore</p>
+          <h2>このサイトでできること</h2>
+        </div>
+        <div class="grid-cards">
+          <button class="card" data-goto="itinerary" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
+            <div class="media"><img src="sapporo-night.webp" alt="旅程のイメージ:札幌の夜景"></div>
+            <div class="body"><p class="tag">01 · Itinerary</p><h3>旅程</h3><p>三日間の移動・宿泊・食事を、日ごとのタイムラインで。</p></div>
+          </button>
+          <button class="card" data-goto="spots" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
+            <div class="media"><img src="otaru-canal.webp" alt="番外編のイメージ:小樽運河"></div>
+            <div class="body"><p class="tag">02 · Extras</p><h3>番外編</h3><p>旅程の外にある、気になるお店や景色を5つ紹介。</p></div>
+          </button>
+          <button class="card" data-goto="hokkaido" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
+            <div class="media"><img src="hokkaido-asahidake-autumn.webp" alt="北海道について のイメージ:旭岳の紅葉"></div>
+            <div class="body"><p class="tag">03 · About</p><h3>北海道について</h3><p>巡る7つの土地の、歴史とちょっとした雑学。</p></div>
+          </button>
+          <button class="card" data-goto="souvenir" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
+            <div class="media"><img src="souvenir-shiroi-koibito.webp" alt="おみやげのイメージ:北海道銘菓"></div>
+            <div class="body"><p class="tag">04 · Souvenir</p><h3>おみやげ</h3><p>新千歳空港で買える、北海道みやげを抜粋して紹介。</p></div>
+          </button>
+          <button class="card" data-goto="map" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
+            <div class="art-panel tone-2 icon">
+              <svg viewBox="0 0 64 64" fill="none" stroke="var(--accent)" stroke-width="1.6" style="width:30%;opacity:.85;"><path d="M32 54s16-15.6 16-27.4A16 16 0 0 0 16 26.6C16 38.4 32 54 32 54Z"/><circle cx="32" cy="26" r="5.4"/></svg>
+            </div>
+            <div class="body"><p class="tag">05 · Map</p><h3>マップ</h3><p>旅の出発点、新千歳空港と旅程エリアの位置関係を確認。</p></div>
+          </button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== ITINERARY ===================== -->
+  <section id="itinerary" class="view">
+    <div class="page-hero wrap">
+      <p class="eyebrow">Itinerary</p>
+      <h1>三日間の旅程</h1>
+      <p>2026年10月21日(水)〜23日(金)。札幌を起点に、富良野・美瑛・北広島を抜けて小樽へ、最終日は余市を巡って札幌から帰路につきます。</p>
+    </div>
+
+    <div class="wrap">
+      <div class="day-card">
+        <div class="day-meta">
+          <div class="num">01</div>
+          <div class="date">10.21 WED</div>
+          <div class="place">札幌</div>
+        </div>
+        <div>
+          <ul class="timeline">
+            <li><span class="time">16:40</span><div class="desc"><strong>新千歳空港 着</strong><span>到着後、車で札幌市内へ移動。</span></div></li>
+            <li><span class="time">—</span><div class="desc"><strong>ルートイン札幌中央 チェックイン</strong><span>この日の宿へ。</span></div></li>
+            <li><span class="time">20:15</span><div class="desc"><strong>夕食:ジンギスカン マルタケ</strong><span>札幌での最初の一食は、定番のジンギスカンで。</span></div></li>
+            <li><span class="time">—</span><div class="desc"><strong>札幌泊</strong><span>一日目はここまで。</span></div></li>
+          </ul>
+          <p class="day-note">翌日は、丘を越えて小樽へ。</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-meta">
+          <div class="num">02</div>
+          <div class="date">10.22 THU</div>
+          <div class="place">富良野・美瑛・北広島・小樽</div>
+        </div>
+        <div>
+          <img class="day-strip" src="biei-autumn.webp" alt="美瑛の丘陵風景のイメージ">
+          <ul class="timeline">
+            <li><span class="time">—</span><div class="desc"><strong>札幌 発</strong><span>この日は長距離の移動日。</span></div></li>
+            <li><span class="time">—</span><div class="desc"><strong>富良野</strong><span>丘陵地帯を抜けながら観光。</span></div></li>
+            <li><span class="time">—</span><div class="desc"><strong>美瑛</strong><span>パッチワークの丘を眺めながら。</span></div></li>
+            <li><span class="time">—</span><div class="desc"><strong>北広島</strong><span>経由して小樽方面へ。</span></div></li>
+            <li><span class="time">—</span><div class="desc"><strong>小樽グランベルホテル チェックイン</strong><span>この日の宿へ。</span></div></li>
+            <li><span class="time">17:15<br>–19:00</span><div class="desc"><strong>夕食:伊勢鮨</strong><span>予約番号 #8288。小樽の寿司を堪能。</span></div></li>
+            <li><span class="time">—</span><div class="desc"><strong>小樽泊</strong><span>二日目はここまで。</span></div></li>
+          </ul>
+          <p class="day-note">翌日は、小樽の街と余市の海を巡って札幌へ。</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-meta">
+          <div class="num">03</div>
+          <div class="date">10.23 FRI</div>
+          <div class="place">小樽・余市</div>
+        </div>
+        <div>
+          <img class="day-strip" src="otaru-canal.webp" alt="小樽運河のイメージ">
+          <ul class="timeline">
+            <li><span class="time">—</span><div class="desc"><strong>小樽</strong><span>運河沿いの街並みを散策。</span></div></li>
+            <li><span class="time">—</span><div class="desc"><strong>余市 方面</strong><span>ワイナリーや海沿いのスポットを巡る。</span></div></li>
+            <li><span class="time">20:50</span><div class="desc"><strong>札幌 発</strong><span>帰路につく。三日間の旅はここで一区切り。</span></div></li>
+          </ul>
+          <p class="day-note">旅程に入れきれなかった場所は、番外編で紹介しています。</p>
+        </div>
+      </div>
+    </div>
+    <div style="height:96px;"></div>
+  </section>
+
+  <!-- ===================== SPOTS (番外編) ===================== -->
+  <section id="spots" class="view">
+    <div class="page-hero wrap">
+      <p class="eyebrow">Extras</p>
+      <h1>番外編 — 気になるスポット</h1>
+      <p>今回の旅程には入れきれなかったけれど、気になっている場所を5つ。日時は決めず、行けたら寄りたいリストです。</p>
+    </div>
+
+    <div class="wrap" style="padding:64px 0 120px;">
+      <div class="grid-cards">
+
+        <a class="card" href="https://masazushi.co.jp/" target="_blank" rel="noopener">
+          <div class="media"><img src="otaru-canal.webp" alt="小樽の街並みのイメージ"></div>
+          <div class="body">
+            <p class="tag">小樽 · 寿司</p>
+            <h3>おたる政寿司</h3>
+            <p>創業80年以上、小樽を「寿司の街」たらしめた老舗。小樽を代表する一軒として知られています。</p>
+            <span class="link-out">公式サイトを見る <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12 12 4M6 4h6v6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="http://www.nantaruichiba.or.jp/" target="_blank" rel="noopener">
+          <div class="media"><img src="seafood-market.webp" alt="鮮魚が並ぶ市場のイメージ"></div>
+          <div class="body">
+            <p class="tag">小樽 · 市場</p>
+            <h3>南樽市場</h3>
+            <p>小樽市新富町にある、地元の人が日常使いする市場。鮮魚店を中心に約30店舗が並ぶ「市民の台所」。</p>
+            <span class="link-out">公式サイトを見る <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12 12 4M6 4h6v6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.town.yoichi.hokkaido.jp/machi/syoukai/bunnkazai-ebisudaikoku.html" target="_blank" rel="noopener">
+          <div class="media"><img src="otaru-coast.webp" alt="余市の海岸線のイメージ"></div>
+          <div class="body">
+            <p class="tag">余市 · 絶景</p>
+            <h3>えびす岩</h3>
+            <p>余市町白岩町にある奇岩。七福神の「えびす様」に似た姿から名付けられた、朝夕が特に美しいスポット。</p>
+            <span class="link-out">余市町の紹介を見る <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12 12 4M6 4h6v6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="https://yukiroro.com/ja/experience/aigues-vives" target="_blank" rel="noopener">
+          <div class="media"><img src="aigues-vives-bread.webp" alt="エグ・ヴィヴの焼きたてパンの数々"></div>
+          <div class="body">
+            <p class="tag">小樽・忍路 · ベーカリー</p>
+            <h3>エグ・ヴィヴ(Aigues Vives)</h3>
+            <p>小樽市忍路の海辺にあるフレンチベーカリー。薪火オーブンで焼く本格的なバゲットとペストリーが評判。</p>
+            <span class="link-out">紹介ページを見る <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12 12 4M6 4h6v6"/></svg></span>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.aotsuka.com/" target="_blank" rel="noopener">
+          <div class="media"><img src="aotsuka-shokudo.webp" alt="小樽青塚食堂の外観"></div>
+          <div class="body">
+            <p class="tag">小樽・祝津 · 食堂</p>
+            <h3>小樽青塚食堂</h3>
+            <p>小樽市祝津、地元の漁師とつながりの深い海鮮食堂。水揚げされたばかりの海の幸をその場で味わえます。</p>
+            <span class="link-out">公式サイトを見る <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 12 12 4M6 4h6v6"/></svg></span>
+          </div>
+        </a>
+
+      </div>
+      <p style="margin-top:32px;font-size:12px;color:var(--muted);">※ 写真はいずれもイメージです。実際の店舗・スポットの写真ではありません。リンク先は各施設の公式サイトまたは自治体の紹介ページです。</p>
+    </div>
+  </section>
+
+  <!-- ===================== HOKKAIDO (北海道について) ===================== -->
+  <section id="hokkaido" class="view">
+    <div class="page-hero wrap">
+      <p class="eyebrow">About the Land</p>
+      <h1>北海道について</h1>
+      <p>今回巡る7つの土地、それぞれの歴史とちょっとした雑学。旅の前に読むと、景色の見え方が少し変わるかもしれません。</p>
+    </div>
+
+    <div class="wrap">
+
+      <div class="area-row">
+        <div class="area-media"><img src="hokkaido-asahidake-autumn.webp" alt="旭岳の秋、山肌を彩る紅葉のイメージ"></div>
+        <div>
+          <p class="area-code">01 — Hokkaido</p>
+          <h3>北海道</h3>
+          <p>かつてアイヌ民族が独自の文化を育んできた土地で、その文化は今も受け継がれています。1869年(明治2年)、開拓使の設置とともに「北海道」の名が定められ、屯田兵制度や札幌農学校の設立を通じて、近代の開拓が進みました。</p>
+        </div>
+      </div>
+
+      <div class="area-row">
+        <div class="area-media"><img src="sapporo-night.webp" alt="札幌の夜景"></div>
+        <div>
+          <p class="area-code">02 — Sapporo</p>
+          <h3>札幌</h3>
+          <p>開拓期の都市計画によって生まれた、碁盤目状の街区が特徴です。大通公園や時計台には、その頃の記憶が今も残ります。さっぽろ雪まつりは1950年、大通公園で始まりました。</p>
+        </div>
+      </div>
+
+      <div class="area-row">
+        <div class="area-media"><img src="furano-lavender.webp" alt="ファーム富田のラベンダー畑と遠くの山並み"></div>
+        <div>
+          <p class="area-code">03 — Furano</p>
+          <h3>富良野</h3>
+          <p>夏に咲き誇るラベンダー畑で知られるエリア。テレビドラマ「北の国から」の舞台としても有名で、ロケ地を巡る旅も人気です。</p>
+        </div>
+      </div>
+
+      <div class="area-row">
+        <div class="area-media"><img src="biei-autumn.webp" alt="美瑛の丘陵風景"></div>
+        <div>
+          <p class="area-code">04 — Biei</p>
+          <h3>美瑛</h3>
+          <p>季節ごとに表情を変える畑の風景から「パッチワークの丘」と呼ばれます。神秘的な色をたたえる「青い池」も、このエリアの見どころのひとつです。</p>
+        </div>
+      </div>
+
+      <div class="area-row">
+        <div class="area-media"><img src="kitahiroshima-escon.webp" alt="エスコンフィールドHOKKAIDOの屋内球場"></div>
+        <div>
+          <p class="area-code">05 — Kitahiroshima</p>
+          <h3>北広島</h3>
+          <p>明治時代、広島県からの入植者が切り拓いたことが地名の由来です。近年は、プロ野球球団の新本拠地を中心とした新しいエリア開発でも注目を集めています。</p>
+        </div>
+      </div>
+
+      <div class="area-row">
+        <div class="area-media"><img src="otaru-canal.webp" alt="小樽運河"></div>
+        <div>
+          <p class="area-code">06 — Otaru</p>
+          <h3>小樽</h3>
+          <p>ニシン漁と港の交易で栄えた街で、大正期に建てられた金融街の建物が今も残ります。大正12年完成の小樽運河と石造倉庫群は、小樽を象徴する景観。ガラス工芸の街としても知られています。</p>
+        </div>
+      </div>
+
+      <div class="area-row">
+        <div class="area-media"><img src="yoichi-vatting-house.webp" alt="ニッカウヰスキー余市蒸溜所のヴァッティングハウス"></div>
+        <div>
+          <p class="area-code">07 — Yoichi</p>
+          <h3>余市</h3>
+          <p>1934年創業のニッカウヰスキー余市蒸溜所があることで知られる町。近年はワイン用ぶどうの栽培も広がり、ワイナリーの町としても注目されています。</p>
+        </div>
+      </div>
+
+    </div>
+    <div style="height:96px;"></div>
+  </section>
+
+  <!-- ===================== SOUVENIR (おみやげ) ===================== -->
+  <section id="souvenir" class="view">
+    <div class="page-hero wrap">
+      <p class="eyebrow">Souvenir</p>
+      <h1>おみやげ</h1>
+      <p>新千歳空港で買える北海道みやげの中から、いくつか抜粋して紹介します。詳しくは出典元の記事もあわせてご覧ください。</p>
+    </div>
+
+    <div class="wrap" style="padding:64px 0 40px;">
+      <div class="grid-cards">
+
+        <div class="card">
+          <div class="media"><img src="souvenir-choux.webp" alt="クリームをはさんだ焼き菓子のイメージ"></div>
+          <div class="body"><p class="tag">空港限定</p><h3>スナッフルス 焼きたてオリジナルシュー</h3><p>注文後に仕上げる焼きたてのシュー生地に、北海道産の生クリームとカスタードをたっぷり合わせた一品。</p></div>
+        </div>
+
+        <div class="card">
+          <div class="media"><img src="souvenir-cheesecake.webp" alt="プレーンなチーズケーキのイメージ"></div>
+          <div class="body"><p class="tag">空港限定</p><h3>札幌農学校 焼きたて酪農チーズケーキ</h3><p>北海道産の牛乳・クリームチーズ・卵を使った焼き菓子。焼きたてと、冷やしたあとの味の変化も楽しめます。</p></div>
+        </div>
+
+        <div class="card">
+          <div class="media"><img src="souvenir-peach.webp" alt="白いクリームと果物を合わせたデザートのイメージ"></div>
+          <div class="body"><p class="tag">空港限定フレーバー</p><h3>みれい菓 札幌カタラーナ 白桃マスカルポーネ</h3><p>濃厚な生クリームに、白桃とマスカルポーネを重ねた冷たいデザート。見た目も華やかな一品。</p></div>
+        </div>
+
+        <div class="card">
+          <div class="media"><img src="souvenir-cornbread.webp" alt="とうもろこしと焼き菓子のイメージ"></div>
+          <div class="body"><p class="tag">ご当地</p><h3>美瑛選果 びえいのコーンぱん</h3><p>美瑛産のスイートコーンを粒ごと練り込んだ名物パン。噛むたびに甘い果汁がはじけます。</p></div>
+        </div>
+
+        <div class="card">
+          <div class="media"><img src="souvenir-haskap.webp" alt="ベリーをあしらったタルトのイメージ"></div>
+          <div class="body"><p class="tag">空港限定パッケージ</p><h3>もりもと ハスカップジュエリー トリオ</h3><p>北海道産ハスカップのジャムを、バター香るサブレとチョコレートで包んだ、三種の味のギフト。</p></div>
+        </div>
+
+        <div class="card">
+          <div class="media"><img src="souvenir-milk-cookies.webp" alt="素朴なバタークッキーのイメージ"></div>
+          <div class="body"><p class="tag">定番</p><h3>札幌農学校 北海道ミルククッキー</h3><p>北海道産の小麦・バター・ミルクの風味を活かした、軽い口当たりの焼き菓子。</p></div>
+        </div>
+
+        <div class="card">
+          <div class="media"><img src="souvenir-shiroi-koibito.webp" alt="チョコレートをサンドしたクッキーのイメージ"></div>
+          <div class="body"><p class="tag">王道</p><h3>石屋製菓 白い恋人 ホワイト&ブラック</h3><p>ラング・ド・シャクッキーに、ホワイトとブラック、2種のチョコレートを合わせた北海道銘菓の代表格。</p></div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+        <p style="font-size:12.5px;color:var(--muted);max-width:520px;">掲載している写真はイメージで、実際の商品写真ではありません。価格・販売状況は変わることがあります。</p>
+        <a class="btn btn-solid" href="https://eclat.hpplus.jp/lifestyle/trip-foods/205941/01/" target="_blank" rel="noopener" style="color:#fff;border-color:var(--accent);">もっと見る(出典:Web éclat)</a>
+      </div>
+    </div>
+    <div style="height:80px;"></div>
+  </section>
+
+  <!-- ===================== MAP ===================== -->
+  <section id="map" class="view">
+    <div class="page-hero wrap">
+      <p class="eyebrow">Map</p>
+      <h1>旅のはじまり、新千歳空港</h1>
+      <p>すべての旅程は、ここから始まります。地図で位置を確認しながら、ルートをイメージしてみてください。</p>
+    </div>
+
+    <div class="wrap" style="padding:0 0 100px;">
+      <div class="map-frame-wrap">
+        <iframe
+          class="map-visual"
+          style="border:0;width:100%;height:480px;display:block;"
+          src="https://www.google.com/maps?q=%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="新千歳空港の地図">
+        </iframe>
+        <div class="map-caption">
+          <div><div class="t1">新千歳空港(New Chitose Airport)</div><div class="t2">北海道千歳市 — 旅の出発点であり、帰着点。</div></div>
+          <a href="https://www.google.com/maps?q=%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener" class="t2" style="text-decoration:underline;">Googleマップアプリで開く ↗</a>
+        </div>
+      </div>
+
+      <p class="eyebrow" style="margin-top:56px;">Route overview</p>
+      <div class="route-chips">
+        <span class="route-chip"><span class="dot"></span>新千歳空港</span>
+        <span class="route-chip"><span class="dot"></span>札幌</span>
+        <span class="route-chip"><span class="dot"></span>富良野</span>
+        <span class="route-chip"><span class="dot"></span>美瑛</span>
+        <span class="route-chip"><span class="dot"></span>北広島</span>
+        <span class="route-chip"><span class="dot"></span>小樽</span>
+        <span class="route-chip"><span class="dot"></span>余市</span>
+      </div>
+      <p style="margin-top:20px;font-size:13px;color:var(--muted);max-width:560px;">それぞれの地名をGoogleマップで個別に検索すると、位置関係がより分かりやすくなります。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-logo">北の余白</div>
+      <nav class="footer-nav">
+        <button data-goto="home">旅のこと</button>
+        <button data-goto="itinerary">旅程</button>
+        <button data-goto="spots">番外編</button>
+        <button data-goto="hokkaido">北海道について</button>
+        <button data-goto="souvenir">おみやげ</button>
+        <button data-goto="map">マップ</button>
+      </nav>
+    </div>
+    <div class="footer-meta">
+      <span>Hokkaido Journey · 2026.10.21 – 10.23</span>
+      <span>Personal Travel Journal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mini player (persists while navigating between views) -->
+<div class="mini-player" id="mini-player">
+  <button id="mini-player-toggle" aria-label="再生 / 一時停止"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5v11l10-5.5z"/></svg></button>
+  <div class="meta">
+    <span class="t1">Now Playing</span>
+    <span class="t2">北海道ツアー</span>
+  </div>
+  <div class="bars"><span></span><span></span><span></span></div>
+</div>
+
+<audio id="theme-audio" src="hokkaido-tour-theme.mp3" preload="none"></audio>
+
+<script src="site.js"></script>
+</body>
+</html>
