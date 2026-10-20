@@ -46,7 +46,7 @@
               <span class="t2" data-audio-label>旅のテーマソング</span>
             </span>
           </button>
-          <button class="lyrics-pill" data-lyrics-open>
+          <button class="lyrics-pill" data-scroll-to="lyrics-section">
             <svg viewBox="0 0 16 16" fill="none"><path d="M3 2.5h7.5L13 5v8.5H3V2.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M5.2 6.3h5.2M5.2 8.5h5.2M5.2 10.7h3.4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
             <span>歌詞を見る</span>
           </button>
@@ -84,28 +84,41 @@
           <h2>このサイトでできること</h2>
         </div>
         <div class="grid-cards">
-          <button class="card" data-goto="itinerary" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
-            <div class="media"><img src="sapporo-night.webp" alt="旅程のイメージ:札幌の夜景"></div>
-            <div class="body"><p class="tag">01 · Itinerary</p><h3>旅程</h3><p>三日間の移動・宿泊・食事を、日ごとのタイムラインで。</p></div>
-          </button>
-          <button class="card" data-goto="spots" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
-            <div class="media"><img src="otaru-canal.webp" alt="番外編のイメージ:小樽運河"></div>
-            <div class="body"><p class="tag">02 · Extras</p><h3>番外編</h3><p>旅程の外にある、気になるお店や景色を5つ紹介。</p></div>
-          </button>
           <button class="card" data-goto="hokkaido" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
             <div class="media"><img src="hokkaido-asahidake-autumn.webp" alt="北海道について のイメージ:旭岳の紅葉"></div>
-            <div class="body"><p class="tag">03 · About</p><h3>北海道について</h3><p>巡る7つの土地の、歴史とちょっとした雑学。</p></div>
+            <div class="body"><p class="tag">01 · About</p><h3>北海道について</h3><p>巡る7つの土地の、歴史とちょっとした雑学。</p></div>
+          </button>
+          <button class="card" data-goto="itinerary" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
+            <div class="media"><img src="sapporo-night.webp" alt="旅程のイメージ:札幌の夜景"></div>
+            <div class="body"><p class="tag">02 · Itinerary</p><h3>旅程</h3><p>三日間の移動・宿泊・食事を、日ごとのタイムラインで。</p></div>
           </button>
           <button class="card" data-goto="souvenir" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
             <div class="media"><img src="souvenir-shiroi-koibito.webp" alt="おみやげのイメージ:北海道銘菓"></div>
-            <div class="body"><p class="tag">04 · Souvenir</p><h3>おみやげ</h3><p>新千歳空港で買える、北海道みやげを抜粋して紹介。</p></div>
+            <div class="body"><p class="tag">03 · Souvenir</p><h3>おみやげ</h3><p>新千歳空港で買える、北海道みやげを抜粋して紹介。</p></div>
           </button>
           <button class="card" data-goto="map" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
             <div class="art-panel tone-2 icon">
               <svg viewBox="0 0 64 64" fill="none" stroke="var(--accent)" stroke-width="1.6" style="width:30%;opacity:.85;"><path d="M32 54s16-15.6 16-27.4A16 16 0 0 0 16 26.6C16 38.4 32 54 32 54Z"/><circle cx="32" cy="26" r="5.4"/></svg>
             </div>
-            <div class="body"><p class="tag">05 · Map</p><h3>マップ</h3><p>旅の出発点、新千歳空港と旅程エリアの位置関係を確認。</p></div>
+            <div class="body"><p class="tag">04 · Map</p><h3>マップ</h3><p>旅の出発点、新千歳空港と旅程エリアの位置関係を確認。</p></div>
           </button>
+          <button class="card" data-goto="spots" style="text-align:left;cursor:pointer;border:1px solid var(--line);">
+            <div class="media"><img src="otaru-canal.webp" alt="番外編のイメージ:小樽運河"></div>
+            <div class="body"><p class="tag">05 · Extras</p><h3>番外編</h3><p>旅程の外にある、気になるお店や景色を5つ紹介。</p></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="block lyrics-section" id="lyrics-section">
+      <div class="wrap">
+        <div class="block-head">
+          <p class="eyebrow">Theme Song</p>
+          <h2>旅のテーマソング、歌詞</h2>
+          <p>この旅のために作った一曲。再生ボタンを押すと、どのページに移動しても流れ続けます。</p>
+        </div>
+        <div class="lyrics-frame">
+          <img src="lyrics-visual.webp" alt="旅のテーマソング「北海道ツアー」歌詞">
         </div>
       </div>
     </section>

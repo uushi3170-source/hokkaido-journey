@@ -298,6 +298,12 @@ section.block.tight{padding:64px 0;}
 }
 .lyrics-modal-close svg{width:14px;height:14px;}
 
+.lyrics-frame{
+  border-radius:16px;overflow:hidden;border:1px solid var(--line);
+  box-shadow:0 20px 50px var(--shadow);
+}
+.lyrics-frame img{display:block;width:100%;height:auto;}
+
 @media (max-width:620px){
   .mini-player{right:14px;bottom:14px;padding:7px 14px 7px 7px;}
   .mini-player .meta{display:none;}
