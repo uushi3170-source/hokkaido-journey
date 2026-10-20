@@ -94,4 +94,26 @@
     audio.addEventListener("pause", () => setPlayingUI(false));
     audio.addEventListener("ended", () => setPlayingUI(false));
   }
+
+  /* ---------- lyrics modal ---------- */
+  const lyricsModal = document.getElementById("lyrics-modal");
+  if (lyricsModal) {
+    const openLyrics = () => {
+      lyricsModal.classList.add("is-open");
+      lyricsModal.setAttribute("aria-hidden", "false");
+    };
+    const closeLyrics = () => {
+      lyricsModal.classList.remove("is-open");
+      lyricsModal.setAttribute("aria-hidden", "true");
+    };
+    document.querySelectorAll("[data-lyrics-open]").forEach(btn => {
+      btn.addEventListener("click", openLyrics);
+    });
+    lyricsModal.addEventListener("click", (e) => {
+      if (e.target === lyricsModal || e.target.closest(".lyrics-modal-close")) closeLyrics();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeLyrics();
+    });
+  }
 })();
